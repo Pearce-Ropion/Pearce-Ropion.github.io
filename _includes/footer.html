@@ -1,0 +1,18 @@
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-body">
+      <ul class="footer-social">
+        {% for link in site.social %}
+          <li class="social-item">
+            <a class="social-icon" href="{{ link.url }}" title="{{ link.title }}">
+              <img src="{{ site.baseurl }}/assets/images/social/{{ link.title }}.svg" alt="{{ link.title }}" />
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="footer-content">
+        <p class="copyright">&copy;  {{ site.name }} 2017</p>
+      </div>
+    </div>
+  </div>
+</footer>

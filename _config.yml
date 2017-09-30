@@ -1,0 +1,40 @@
+# Site settings
+
+name: Pearce Ropion
+title: Pearce Ropion | Creative Front End Developer
+email: pearce.ropion@me.com
+description: >-
+  Creative front end developer with a mind for compelling designs that spring to life through the combination
+  of user experience and sophisticated technologies, all to create stunning visual and informative websites.
+baseurl: ""
+url: "https://pearce-ropion.com"
+
+social:
+  - title: email
+    url: mailto:pearce.ropion@me.com
+  - title: Twitter
+    url: mailto:pearce.ropion@me.com
+  - title: Facebook
+    url: https://www.facebook.com/pearce.ropion.9
+  - title: Github
+    url: https://www.github.com/pearce-ropion
+  - title: Linkedin
+    url: https://www.linkedin.com/in/pearce-ropion/
+
+github_username:  pearce-ropion
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-minifier
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
