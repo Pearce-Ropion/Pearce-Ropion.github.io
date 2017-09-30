@@ -8,7 +8,7 @@ description: >-
   of user experience and sophisticated technologies, all to create stunning visual and informative websites.
 baseurl: ""
 url: "https://pearce-ropion.com"
-
+email: pearce.ropion@me.com
 social:
   - title: email
     url: mailto:pearce.ropion@me.com
@@ -25,16 +25,19 @@ github_username:  pearce-ropion
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-minifier
   - jekyll-feed
 
+sass:
+  sass_dir:
+
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - README.md
+
+keep_files:
+  - CNAME
+  - .git
+  - .gitignore
