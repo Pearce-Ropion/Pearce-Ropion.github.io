@@ -10,6 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 3.6.0"
 gem "bourbon"
+gem "autoprefixer-rails"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
@@ -21,6 +22,7 @@ gem "bourbon"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-minifier"
+  gem "jekyll-assets"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
