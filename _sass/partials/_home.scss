@@ -1,7 +1,19 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  color: green;
+#home-section {
+  .home-wrapper {
+    .home-body {
+      .home-content {
+
+      }
+      .scroll-wrapper {
+        .scroll-down {
+          .scroll-down-arrow {
+              transform: rotate(90deg);
+              height: 20px;
+              display: block;
+              margin: 10px auto;
+            }
+        }
+      }
+    }
+  }
 }

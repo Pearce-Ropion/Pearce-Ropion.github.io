@@ -1,5 +1,9 @@
 ---
 # Import scss partials
 ---
+
 @import 'bourbon/bourbon';
+@import 'partials/screens';
+@import 'partials/variables';
+@import 'partials/base';
 @import 'partials/home';

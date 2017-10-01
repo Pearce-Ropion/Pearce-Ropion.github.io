@@ -29,9 +29,6 @@ plugins:
   - jekyll-minifier
   - jekyll-feed
 
-sass:
-  sass_dir:
-
 exclude:
   - Gemfile
   - Gemfile.lock
