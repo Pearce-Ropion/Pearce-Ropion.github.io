@@ -17,18 +17,17 @@
           content: "";
           position: absolute;
           width: 0;
-          background-color: rgba(234,234,234,0.6);
           border-left: 250px solid transparent;
           border-right: 250px solid transparent;
         }
         &:before {
           bottom: 100%;
-          border-bottom: 144.34px solid #eaeaea;
+          border-bottom: 144.34px solid rgba(234,234,234,0.6);
         }
         &:after {
           top: 100%;
           width: 0;
-          border-top: 144.34px solid #eaeaea;
+          border-top: 144.34px solid rgba(234,234,234,0.6);
         }
         .home-content {
           text-align: center;
