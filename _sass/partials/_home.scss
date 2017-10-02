@@ -12,8 +12,7 @@
         position: relative;
         width: 500px;
         height: 288.68px;
-        opacity: 0.6;
-        background-color: #eaeaea;
+        background-color: rgba(234,234,234,0.6);
         &:before, &:after {
           content: "";
           position: absolute;
@@ -37,7 +36,6 @@
           position: relative;
           margin-top: -5%;
           .heading {
-            opacity: 1;
             padding-top: 2%;
             font-size: 4em;
             color: black;
