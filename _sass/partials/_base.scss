@@ -63,14 +63,14 @@ ul.inline {
 }
 #home-section .bg {
   z-index: 0;
-  background-image: url('/assets/images/home-xl.png');
+  background-image: url('/assets/images/home-xl.jpg');
   @include MQ(L) {
-    background-image: url('/assets/images/home-l.png');
+    background-image: url('/assets/images/home-l.jpg');
   }
   @include MQ(MM) {
-    background-image: url('/assets/images/home-m.png');
+    background-image: url('/assets/images/home-m.jpg');
   }
   @include MQ(SM) {
-    background-image: url('/assets/images/home-s.png');
+    background-image: url('/assets/images/home-s.jpg');
   }
 }
