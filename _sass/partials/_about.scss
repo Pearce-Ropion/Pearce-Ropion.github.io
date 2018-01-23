@@ -1,0 +1,19 @@
+#about-section {
+  .about-wrapper {
+    .about-img {
+      width: 30%;
+      float: right;
+      display: inline-block;
+      margin-top: 70px;
+      .headshot {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+    .about-text-wrapper {
+      width: 60%;
+      display: inline-block;
+    }
+  }
+}
