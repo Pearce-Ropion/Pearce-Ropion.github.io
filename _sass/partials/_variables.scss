@@ -1,56 +1,53 @@
 // Colors
-$gray: #26252E;
+$lightGray: #808080;
+$gray: #393939;
+$darkGray: #26252E;
+$lightOrange: #FFB566;
 $orange: #FF8400;
+$darkOrange: #994F00;
 $white: #F2F2F2;
+$whiteRGBA: rgba(242, 242, 242, 0.65);
+$lightGrayRGBA: rgba(57, 57, 57, 0.7);
+$grayRGBA: rgba(38, 37, 46, 0.7);
+$darkGrayRGBA: rgba(23, 23, 28, 0.7);
+$lightOrangeRGBA: rgba(255, 181, 102, 0.7);
+$orangeRGBA: rgba(255, 132, 0, 0.7);
+$darkOrangeRGBA: rgba(153, 79, 0, 0.7);
 
 // Fonts
 $Montserrat: 'Montserrat', Helvetica, Arial, sans-serif;
-$MontserratAlt: 'Montserrat Alternates', Helvetica, Arial, sans-serif;
 $Cinzel: 'Cinzel', Georgia, serif;
 $Merienda: 'Merienda', Arial, cursive, sans-serif;
+$OpenSans: 'Open Sans', Helvetica, Arial, sans-serif;
+$Varela: 'Varela Round', Helvetica, Arial, sans-serif;
+$Allerta: 'Allerta', Helvetica, Arial, sans-serif;
 
 // Breakpoints
-$S: 330px;
-$S400: 400px;
-$S440: 440px;
-$SM: 480px;
-$S600: 600px;
-$S660: 660px;
-$M: 768px;
-$MM: 900px;
-$ML: 1000px;
-$L: 1170px;
+$XS: 330px;
+$S: 576px;
+$M: 767px;
+$L: 960px;
+$XL: 1200px;
+$HD: 1920px;
 
 // Media queries
 @mixin MQ($canvas) {
-  @if $canvas==S {
+  @if $canvas==XS{
+    @media only screen and (max-width: $XS) { @content; }
+  }
+  @else if $canvas==S {
     @media only screen and (max-width: $S) { @content; }
-  }
-  @else if $canvas==S400 {
-    @media only screen and (max-width: $S400) { @content; }
-  }
-  @else if $canvas==S440 {
-    @media only screen and (max-width: $S440) { @content; }
-  }
-  @else if $canvas==SM {
-    @media only screen and (max-width: $SM) { @content; }
-  }
-  @else if $canvas==S600 {
-    @media only screen and (max-width: $S600) { @content; }
-  }
-  @else if $canvas==S660 {
-    @media only screen and (max-width: $S660) { @content; }
   }
   @else if $canvas==M {
     @media only screen and (max-width: $M) { @content; }
   }
-  @else if $canvas==MM {
-    @media only screen and (max-width: $MM) { @content; }
-  }
-  @else if $canvas==ML {
-    @media only screen and (max-width: $ML) { @content; }
-  }
   @else if $canvas==L {
     @media only screen and (max-width: $L) { @content; }
+  }
+  @else if $canvas==XL {
+    @media only screen and (max-width: $XL) { @content; }
+  }
+  @else if $canvas==HD {
+    @media only screen and (max-width: $HD) { @content; }
   }
 }

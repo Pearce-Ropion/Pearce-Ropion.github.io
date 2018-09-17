@@ -1,0 +1,35 @@
+<section id="timeline-section" class="section">
+  <div class="bg" data-anchor-target="#timeline-section" data-bottom-top="transform: translate3d(0px, -150px, 0px);" data-top-bottom="transform: translate3d(0px, 150px, 0px);">
+    <div class="bg-overlay"></div>
+  </div>
+  <div class="section-wrapper">
+    <h1>Where have I worked?</h1>
+    <div class="timeline-blurb">
+      <h2>Throughout my time at Santa Clara University, I've had the privilage of being at the heart of silicon valley, the place
+        to be when studying to go into the field of computer science. This has given me some wonderful opportunities including
+        a year long internship with
+        <a href="https://www.proofpoint.com">Proofpoint</a>, a leader in cloud security. </h2>
+    </div>
+    <span class="divider"></span>
+    <div class="timeline-wrapper">
+      <div id="timeline">
+        {% for job in site.data.timeline %}
+		{% assign idx = forloop.index %}
+        <div class="timeline-block">
+          <div id="content-{{idx}}" class="timeline-content">
+            <h3 class="timeline-position">{{job.position}}</h3>
+            <a class="timeline-company" href="{{element.url}}">{{job.company}}</a>
+            <p class="timeline-description">{{job.description}}</p>
+          </div>
+          <div id="semi-{{idx}}" class="timeline-icon-semicircle">
+            <div class="timeline-icon-background">
+              <div class="timeline-icon icon {{job.icon}}"></div>
+            </div>
+          </div>
+          <span class="timeline-date">{{job.date}}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

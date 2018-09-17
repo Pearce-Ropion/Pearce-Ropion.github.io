@@ -1,121 +1,185 @@
 *,
 *:after,
 *:before {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: $gray;
-  color: $white;
-  height: 100%;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $darkGray;
+    color: $white;
+    height: 100%;
 }
+
 a {
-  text-decoration: none;
-  color: $orange;
+    text-decoration: none;
+    color: $orange;
 }
+
 h1 {
-  font-family: $Cinzel;
+    font-family: $Cinzel;
 }
-h2,h3 {
-  font-family: $Montserrat;
-  font-weight: 500;
+
+h2,
+h3 {
+    font-family: $Montserrat;
+    font-weight: 500;
 }
+
+h4,
+h5,
+h6 {
+    font-family: $Montserrat;
+}
+
 p {
-  font-family: Helvetica, Arial, sans-serif;
+    font-family: $OpenSans;
+    padding-bottom: 20px;
 }
+
 ul.inline {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
+
+li {
+    font-family: $OpenSans;
+}
+
 .center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .section {
-  width: 100%;
-  height: auto;
-  min-height: 700px;
-  padding: 0;
-  overflow: hidden;
-  color: $white;
-  position: relative;
-  .section-wrapper {
-    padding: 100px;
-    @include MQ(MM) {
-      padding: 100px 50px;
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    padding: 0;
+    overflow: hidden;
+    color: $white;
+    position: relative;
+    z-index: 0;
+    .section-wrapper {
+        padding: 100px;
+        @include MQ(M) {
+            padding: 50px 50px;
+        }
+        @include MQ(S) {
+            padding: 50px 25px;
+        }
     }
-  }
-  .divider {
-    background-color: $orange;
-    height: 2px;
-    width: 200px;
-    margin: 30px 0;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    display: block;
-  }
+    .divider {
+        background-color: $orange;
+        height: 2px;
+        width: 200px;
+        margin: 30px 0;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        display: block;
+        @include MQ(M) {
+            width: 100%;
+        }
+    }
 }
 
 .skrollr-body {
-  height: 100%;
-  overflow: visible;
-  position: relative;
+    height: 100%;
+    overflow: visible;
+    position: relative;
 }
+
 .skrollr-desktop body {
-  height: 100% !important;
+    height: 100% !important;
 }
+
 .bg {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  overflow: hidden;
-  .bg-overlay {
     width: 100%;
     height: 100%;
     min-height: 100%;
     background-position: center top;
-    background-color: rgba(37, 38, 46, 0.5);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    z-index: 1;
+    z-index: -3;
     overflow: hidden;
-  }
+    .bg-overlay {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        background-position: center top;
+        background-color: rgba(37, 38, 46, 0.5);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+    }
 }
 
 #home-section .bg {
-  z-index: 0;
-  background-image: url('/assets/images/home-xl.jpg');
-  @include MQ(L) {
-    background-image: url('/assets/images/home-l.jpg');
-  }
-  @include MQ(MM) {
-    background-image: url('/assets/images/home-m.jpg');
-  }
-  @include MQ(SM) {
-    background-image: url('/assets/images/home-s.jpg');
-  }
+    z-index: -2;
+    background-image: url('/assets/images/backgrounds/home-xl.jpg');
+    @include MQ(L) {
+        background-image: url('/assets/images/backgrounds/home-l.jpg');
+    }
+    @include MQ(M) {
+        background-image: url('/assets/images/backgrounds/home-m.jpg');
+    }
+    @include MQ(S) {
+        background-image: url('/assets/images/backgrounds/home-s.jpg');
+    }
 }
+
 #services-section .bg {
-  z-index: 0;
-  background-image: url('/assets/images/home-xl.jpg');
-  @include MQ(L) {
-    background-image: url('/assets/images/home-l.jpg');
-  }
-  @include MQ(MM) {
-    background-image: url('/assets/images/home-m.jpg');
-  }
-  @include MQ(SM) {
-    background-image: url('/assets/images/home-s.jpg');
-  }
+    z-index: -2;
+    background-image: url('/assets/images/backgrounds/services-xl.jpg');
+    @include MQ(L) {
+        background-image: url('/assets/images/backgrounds/services-l.jpg');
+    }
+    @include MQ(M) {
+        background-image: url('/assets/images/backgrounds/services-m.jpg');
+    }
+    @include MQ(S) {
+        background-image: url('/assets/images/backgrounds/services-s.jpg');
+    }
+}
+
+#timeline-section .bg {
+    z-index: -2;
+    background-image: url('/assets/images/backgrounds/timeline-xl.jpg'); // background-position: center center;
+    @include MQ(L) {
+        background-image: url('/assets/images/backgrounds/timeline-l.jpg');
+    }
+    @include MQ(M) {
+        background-image: url('/assets/images/backgrounds/timeline-m.jpg');
+    }
+    @include MQ(S) {
+        background-image: url('/assets/images/backgrounds/timeline-s.jpg');
+    }
+}
+
+#contact-section .bg {
+    z-index: -2;
+    background-image: url('/assets/images/backgrounds/contact-xl.png'); // background-position: center center;
+    @include MQ(L) {
+        background-image: url('/assets/images/backgrounds/contact-l.png');
+    }
+    @include MQ(M) {
+        background-image: url('/assets/images/backgrounds/contact-m.png');
+    }
+    @include MQ(S) {
+        background-image: url('/assets/images/backgrounds/contact-s.png');
+    }
 }

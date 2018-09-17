@@ -1,0 +1,48 @@
+- position: Santa Clara University Student
+  company: Web Design and Eneering Major
+  date: Sep 2015 - Jun 2019
+  url: https://www.scu.edu
+  description: Candidate for Bachelor of Sciene in Web Design and Engineering with a minor in Computer Science and Engineering. <strong>Graduating in June 2018.</strong>
+  icon: graduation-cap
+- position: DevOps Front-End Engineering Co-Op
+  company: Proofpoint
+  date: Sep 2018 - Present
+  url: https://www.proofpoint.com/us
+  description: Developing and enhancing tools that revolve around monitoring the health of essential resources and current technologies with a consistent release schedule within an Agile work environment. Increasing operational efficiency of NOC monitoring platform by integrating React and Redux front-end with Golang back-end using Apollo GraphQL.
+  icon: web-design
+- position: DevOps Front-End Engineering Intern
+  company: Proofpoint
+  date: Jun 2018 - Aug 2018
+  url: https://www.proofpoint.com/us
+  description: Designed React app to visualize overview of essential services for back-end monitoring data from over 50,000 hosts. Developed mock service in ExpressJS to respond to POST requests with fixed JSON responses to enable individual service testing.
+  icon: admin-tools
+- position: Application Developer
+  company: Department of Conservation
+  date: May 2017 - Oct 2017
+  url: http://pearceropion.com/portfolio/creec/
+  description: Built web app to forecast accumulation of carbon in Californian ecosystems using JQuery UI/DOM manipulation and SQLite/PHP backend processing. Recursively generated forest type library containing over 31,000+ permutations for use with the app and continued study in the field.
+  icon: leaf
+- position: Lead Developer
+  company: Santa Clara Univeristy
+  date: Jan 2017 - Mar 2017
+  url: http://pearceropion.com/portfolio/educamps/
+  description: Led team of four in development of user-facing web application. Built using Javascript, PHP and MySQL to create UI/UX eCommerce portal, complete with registration, forums and networking.
+  icon: campfire
+- position: Web Designer
+  company: A Style Experience
+  date: Jan 2017 - Sep 2017
+  url: https://astyleexperience.com
+  description: Designed and maintain customer facing stylist website through wordpress. Built sleek, modern theme to appeal to the masses and published acording to the latest Google SEO standards for maximum site hits.
+  icon: shopping-bag
+- position: Owner and Maintainer
+  company: Thermacraft
+  date: Aug 2014 - Feb 2018
+  url: http://thermacraft.net
+  description: Managed publicly available LAMP server running Java applications. Included monitoring, maintenance, troubleshooting, and basic auth of a creative gaming community. Managed volunteer staff, develop plugins, and engage with community while improving time management on large scale projects.
+  icon: module
+# - position:
+#   company:
+#   date:
+#   url:
+#   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius sodales dui ac semper. Etiam faucibus blandit nisl vitae iaculis. Sed id velit lacus. Curabitur nec est lorem. Donec mattis ipsum vitae elit elementum congue.
+#   icon:
