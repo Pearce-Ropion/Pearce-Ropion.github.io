@@ -1,0 +1,36 @@
+footer {
+    background: #ffb545;
+    background: -moz-linear-gradient(left, #ffb545 1%, #ff8400 100%);
+    background: -webkit-linear-gradient(left, #ffb545 1%,#ff8400 100%);
+    background: linear-gradient(to right, #ffb545 1%,#ff8400 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between; 
+    .footer-social {
+        padding-left: 0;
+        list-style: none;
+        width: 100%;
+        .social-icon {
+            img {
+                width: 3em;
+                margin: 1em 0.5em;
+                transition: all 0.3s ease;
+                &:hover, &:focus {
+                    transform: translateY(-5px);
+                    -webkit-filter: invert(1);
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+    .footer-content {
+        width: 100%;
+        text-align: center;
+        p {
+            padding-bottom: 0;
+            color: $darkGray;
+        }
+        padding-bottom: 1em;
+    }
+}
