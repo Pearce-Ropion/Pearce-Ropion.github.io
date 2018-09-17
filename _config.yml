@@ -8,17 +8,6 @@ description: >-
 baseurl: ""
 url: "https://pearce-ropion.com"
 email: pearce.ropion@me.com
-social:
-  - title: email
-    url: mailto:pearce.ropion@me.com
-  - title: Twitter
-    url: mailto:pearce.ropion@me.com
-  - title: Facebook
-    url: https://www.facebook.com/pearce.ropion.9
-  - title: Github
-    url: https://www.github.com/pearce-ropion
-  - title: Linkedin
-    url: https://www.linkedin.com/in/pearce-ropion/
 
 github_username:  pearce-ropion
 
