@@ -1,0 +1,16 @@
+- row: row1
+  services:
+    - name: Web Development
+      icon: code
+      description: Building websites through HTML, CSS and Javascript using back-end pre-processors such as React, Angular, Node and Ruby. I enjoy building websites that spring to life whilst maintaining an efficient, scalable and modular code base.
+    - name: User Experience
+      icon: web-design
+      description: A website is designed for the people who use it, thus it must allow tasks to be accomplished simply and efficiently without need for further explaination. 
+- row: row2 
+  services:
+    - name: Back-end Engineering
+      icon: server
+      description: No matter how magnificent a website is, if no one can access it, no one can appreciate it. My skillset allows me to fully integrate with the infrastructure of site with the front-end asthetics.
+    - name: Responsive UI Design
+      icon: design
+      description: The 21st Century is the age of mobility! I strive to develop for all platforms alike, making sure that any functionality that is present on a computer screen can also be accomplished through a mobile interface.

@@ -3,16 +3,20 @@
     <div class="bg-overlay"></div>
   </div>
   <div class="section-wrapper">
+    <h1>What Do I Offer?</h1>
+    <span class="divider"></span>
     <div class="services-wrapper">
+      {% for row in site.data.services %}
       <div class="services-row">
+        {% for service in row.services %}
         <div class="service">
-          <figure class="service-icon">
-            <img class="service-icon-img" src="assets/images/service1.jpg" alt="Service 1" />
-          </figure>
-          <h3 class="service-name"></h3>
-          <p class="paragraph service-desc"></p>
+          <div class="service-icon icon {{service.icon}}"></div>
+          <h3 class="service-name">{{service.name}}</h3>
+          <p class="paragraph service-desc">{{service.description}}</p>
         </div>
+        {% endfor %}
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>
