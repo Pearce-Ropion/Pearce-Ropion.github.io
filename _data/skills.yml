@@ -1,0 +1,59 @@
+development:
+  - name: HTML5
+    amount: 100
+  - name: CSS3
+    amount: 100
+  - name: ES6
+    amount: 100
+  - name: Node.js
+    amount: 80
+  - name: React
+    amount: 90
+  - name: Angular
+    amount: 65
+  - name: Vue
+    amount: 60
+    name: Redux
+    amount: 75
+  - name: SQL
+    amount: 80
+  - name: Python
+    amount: 60
+  - name: PHP
+    amount: 95
+  - name: Rails
+    amount: 50
+  - name: Unix
+    amount: 50
+
+design:
+  - name: Photoshop
+    icon: photoshop
+  - name: Illustrator
+    icon: illustrator
+  - name: InDesign
+    icon: indesign
+
+tools:
+  - name: Git
+    level: 1
+  - name: Jira
+    level: 1
+  - name: Unit Testing
+    level: 1
+  - name: Webpack
+    level: 0
+  - name: RestAPI
+    level: 0
+
+knowledge:
+  - name: Mobile First
+    level: 1
+  - name: Usability
+    level: 0
+  - name: User Experience
+    level: 1
+  - name: SEO
+    level: 0
+  - name: Typography
+    level: 1

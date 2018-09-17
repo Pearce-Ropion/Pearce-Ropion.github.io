@@ -3,9 +3,16 @@
 ---
 
 @import 'bourbon/bourbon';
-@import 'partials/screens';
 @import 'partials/variables';
 @import 'partials/base';
+@import 'partials/icons';
 @import 'partials/home';
+// @import 'partials/baseNew';
+@import 'partials/svg';
 @import 'partials/about';
 @import 'partials/services';
+@import 'partials/skills';
+@import 'partials/timeline';
+@import 'partials/projects';
+@import 'partials/contact';
+@import 'partials/footer';

@@ -1,0 +1,77 @@
+<section id="skills-section" class="section">
+  <div class="section-wrapper">
+    <h1>What can I do?</h1>
+    <span class="divider"></span>
+    <div class="skills-flex-wrapper">
+      <div class="skills-development flex-item">
+        <div class="skills-name">
+          <div class="skills-icon icon cog-gear"></div>
+          <h3 class="skills-name-header">Development</h3>
+        </div>
+        <div class="skills-block skills-development-circles">
+          {% for skill in site.data.skills.development %}
+            <div class="skills-development-pie">
+              <div class="inner-pie">
+                <span class="skills-development-lang">{{skill.name}}</span>
+                <span class="skills-development-amt">{{skill.amount}}</span>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="skills-block skills-other">
+        <div class="skills-design flex-item">
+          <div class="skills-name">
+            <div class="skills-icon icon edit-image"></div>
+            <h3 class="skills-name-header">Design</h3>
+          </div>
+          {% for skill in site.data.skills.design %}
+            <div class="skills-icon-inline icon {{skill.icon}}"></div>
+          {% endfor %}
+        </div>
+        <div class="skills-block skills-other-list flex-item">
+          <div class="skills-tools">
+            <div class="skills-name">
+              <div class="skills-icon icon wrench"></div>
+              <h3 class="skills-name-header">Tools</h3>
+            </div>
+            <ul class="skills-list">
+              {% for skill in site.data.skills.tools %}
+                {% assign level = skill.level %}
+                <div class="skills-list-item">
+                  {% if level == 0 %}
+                    <div class="skills-list-item-icon check icon"></div>
+                  {% endif %}
+                  {% if level == 1 %}
+                    <div class="skills-list-item-icon check icon"></div>
+                  {% endif %}
+                  <li class="skills-list-item-name">{{skill.name}}</li>
+                </div>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="skills-block skills-knowlegde">
+            <div class="skills-name">
+              <div class="skills-icon icon neural-network"></div>
+              <h3 class="skills-name-header">Knowledge</h3>
+            </div>
+            <ul class="skills-list">
+              {% for skill in site.data.skills.knowledge %}
+                {% assign level = skill.level %}
+                <div class="skills-list-item">
+                  {% if level == 0 %}
+                    <div class="skills-list-item-icon check icon"></div>
+                  {% endif %}
+                  {% if level == 1 %}
+                    <div class="skills-list-item-icon check icon"></div>
+                  {% endif %}
+                  <li class="skills-list-item-name">{{skill.name}}</li>
+                </div>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
