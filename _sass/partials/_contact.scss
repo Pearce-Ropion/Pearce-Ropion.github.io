@@ -1,0 +1,68 @@
+#contact-section {
+    .bg-overlay {
+        background-color: rgba(37, 38, 46, 0.7);
+    }
+    .contact-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        form {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            @include MQ(S) {
+                width: 100%;
+            }
+            .input {
+                width: 100%;
+                padding-bottom: 2em;
+                label {
+                    text-transform: uppercase;
+                    display: block;
+                    font-size: 0.95em;
+                    font-family: $Montserrat;
+                    font-weight: 600;
+                }
+                input,
+                textarea {
+                    color: $white;
+                    display: block;
+                    background-color: transparent;
+                    font-size: 1.1em;
+                    padding: 0.5em;
+                    border: 0;
+                    width: 100%;
+                    border-bottom: 2px solid $orange;
+                    outline: none;
+                }
+                textarea {
+                    min-height: 115px;
+                    resize: none;
+                    overflow: hidden;
+                }
+            }
+            button {
+                font-family: $Varela;
+                font-size: 1.5em;
+                background-color: transparent;
+                color: $white;
+                text-transform: uppercase;
+                margin-top: 1.5em;
+                padding: 0.25em;
+                border: 2px solid $orange;
+                border-radius: 0.25em;
+                font-weight: bold;
+                transition: all 0.5s ease;
+                &:hover {
+                    cursor: pointer;
+                    background-color: $orange;
+                    color: $darkGray;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
