@@ -1,0 +1,127 @@
+#projects-section {
+    .projects-wrapper {
+        .project-block {
+            .project-images {
+                width: 90%;
+                display: block;
+                margin: auto;
+                position: relative;
+                @include MQ(M) {
+                    width: 100%;
+                }
+                .project-image {
+                    display: block;
+                    width: 75%;
+                    img {
+                        width: 100%;
+                        &:nth-child(2) {
+                            margin-top: -5px;
+                        }
+                    }
+                }
+                .image-home {
+                    position: absolute;
+                    top: 25%;
+                    left: 25%;
+                    z-index: 100;
+                }
+                .image-alt {
+                    z-index: 200;
+                }
+            }
+            .project-content {
+                text-align: center;
+                margin: 9em auto 2em;
+                width: 90%;
+                @include MQ(M) {
+                    width: 100%;
+                    margin: 4em auto 2em;
+                }
+                .project-name {
+                    font-family: $Montserrat;
+                    font-weight: 500;
+                    font-size: 3em;
+                    @include MQ(M) {
+                        font-size: 2em;
+                    }
+                }
+                .project-content-divider {
+                    background-color: $orange;
+                    height: 3px;
+                    border: 1px transparent;
+                    border-radius: 3px;
+                    width: 10%;
+                    display: block;
+                    margin: 1em auto;
+					@include MQ(M) {
+						width: 40%;
+					}
+                }
+                .project-description {
+                    width: 80%;
+                    margin: auto;
+                    line-height: 1.5em;
+                    padding-bottom: 0;
+					@include MQ(M) {
+						width: 100%;
+					}
+                }
+                .project-tags {
+                    font-family: $Allerta;
+                    font-size: 0.75em;
+                    margin-top: 1em;
+                    margin-bottom: 2.5em;
+                    .project-tag {
+                        padding: 4px;
+                        margin-right: 3px;
+                        background-color: #464455;
+                        color: #75718E;
+                        border: 1px transparent;
+						border-radius: 3px;
+						display: inline-block;
+						transition: all 0.3s ease;
+                        &:hover {
+                            color: $orange;
+                            cursor: default;
+						}
+                    }
+                }
+                .project-links {
+                    font-family: $Varela;
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    margin-top: 1.5em;
+                    .project-link {
+                        padding: 0.3em;
+                        margin-right: 0.5em;
+                        border: 2px solid $orange;
+                        border-radius: 0.25em;
+						font-weight: bold;
+						transition: all 0.3s ease;
+                        &:hover {
+                            background-color: $orange;
+                            color: $darkGray;
+                            border-color: transparent;
+                        }
+                    }
+                }
+            }
+            &:last-of-type .project-divider {
+                display: none;
+            }
+        }
+        .project-divider {
+            background-color: $orange;
+            height: 3px;
+            border: 1px transparent;
+            border-radius: 3px;
+            width: 15%;
+            display: block;
+            margin: 100px 0;
+			@include MQ(M) {
+				width: 25%;
+				margin: 50px 0 75px;
+			}
+        }
+    }
+}

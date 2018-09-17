@@ -1,0 +1,40 @@
+<section id="projects-section" class="section">
+  <div class="section-wrapper">
+    <h1>What have I done?</h1>
+    <span class="divider"></span>
+    <div class="projects-wrapper">
+      {% for project in site.data.projects %}
+        <div class="project-block">
+          <div class="project-images">
+            <div class="project-image image-home">
+              <img class="project-image-browser" src="/assets/images/projects/browser.png" alt="Browser Box" />
+              <img class="project-image-home" src="/assets/images/projects/{{project.image}}-home.png" alt="{{project.name}} Home Page" />
+            </div>
+            <div class="project-image image-alt">
+              <img class="project-image-browser" src="/assets/images/projects/browser.png" alt="Browser Box" />
+              <img class="project-image-alt" src="/assets/images/projects/{{project.image}}-alt.png" alt="{{project.name}} Alternate Page" />
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">{{project.name}}</h3>
+            <div class="project-tags">
+              {% for tag in project.tags %}
+                <span class="project-tag">{{tag.name}}</span>
+              {% endfor %}
+            </div>
+            <span class="project-content-divider"></span>
+            <p class="project-description">{{project.description}}</p>
+            <div class="project-links">
+              {% for link in project.links %}
+                <a class="project-link" href="{{link.url}}" target="_blank">{{link.type}}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% if forloop.last == false %}
+          <span class="project-divider"></span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
