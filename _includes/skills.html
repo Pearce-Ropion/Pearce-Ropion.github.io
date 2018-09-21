@@ -25,9 +25,11 @@
             <div class="skills-icon icon edit-image"></div>
             <h3 class="skills-name-header">Design</h3>
           </div>
-          {% for skill in site.data.skills.design %}
-            <div class="skills-icon-inline icon {{skill.icon}}"></div>
-          {% endfor %}
+          <div class="skills-design-icon-box">
+            {% for skill in site.data.skills.design %}
+              <div class="skills-icon-inline icon {{skill.icon}}"></div>
+            {% endfor %}
+          </div>
         </div>
         <div class="skills-block skills-other-list flex-item">
           <div class="skills-tools">

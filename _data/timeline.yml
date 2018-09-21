@@ -2,13 +2,13 @@
   company: Web Design and Eneering Major
   date: Sep 2015 - Jun 2019
   url: https://www.scu.edu
-  description: Candidate for Bachelor of Sciene in Web Design and Engineering with a minor in Computer Science and Engineering. <strong>Graduating in June 2018.</strong>
+  description: Candidate for Bachelor of Sciene in Web Design and Engineering with a minor in Computer Science and Engineering. Member of the Association for Computing Machinery. <strong>Graduating in June 2018.</strong>
   icon: graduation-cap
 - position: DevOps Front-End Engineering Co-Op
   company: Proofpoint
   date: Sep 2018 - Present
   url: https://www.proofpoint.com/us
-  description: Developing and enhancing tools that revolve around monitoring the health of essential resources and current technologies with a consistent release schedule within an Agile work environment. Increasing operational efficiency of NOC monitoring platform by integrating React and Redux front-end with Golang back-end using Apollo GraphQL.
+  description: Developing and enhancing tools that revolve around monitoring the health of essential resources within an Agile work environment. Increasing operational efficiency of NOC monitoring platform by integrating React and Redux front-end with Golang back-end using Apollo GraphQL.
   icon: web-design
 - position: DevOps Front-End Engineering Intern
   company: Proofpoint
@@ -38,7 +38,7 @@
   company: Thermacraft
   date: Aug 2014 - Feb 2018
   url: http://thermacraft.net
-  description: Managed publicly available LAMP server running Java applications. Included monitoring, maintenance, troubleshooting, and basic auth of a creative gaming community. Managed volunteer staff, develop plugins, and engage with community while improving time management on large scale projects.
+  description: Managed publicly available LAMP server running Java applications. Included monitoring, maintenance, troubleshooting, and basic auth of a creative gaming community.
   icon: module
 # - position:
 #   company:

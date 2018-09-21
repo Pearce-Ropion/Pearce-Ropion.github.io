@@ -5,7 +5,7 @@
       description: Building websites through HTML, CSS and Javascript using back-end pre-processors such as React, Angular, Node and Ruby. I enjoy building websites that spring to life whilst maintaining an efficient, scalable and modular code base.
     - name: User Experience
       icon: web-design
-      description: A website is designed for the people who use it, thus it must allow tasks to be accomplished simply and efficiently without need for further explaination. 
+      description: A website is designed for the people who use it, thus it must allow tasks to be accomplished simply and efficiently without need for further explaination. It should be pleasing to look at and easy to use without diffcultty or issue.
 - row: row2 
   services:
     - name: Back-end Engineering

@@ -4,7 +4,7 @@
   </div>
   <div class="section-wrapper">
     <h1>Where have I worked?</h1>
-    <div class="timeline-blurb">
+    <div class="blurb">
       <h2>Throughout my time at Santa Clara University, I've had the privilage of being at the heart of silicon valley, the place
         to be when studying to go into the field of computer science. This has given me some wonderful opportunities including
         a year long internship with
@@ -15,18 +15,18 @@
       <div id="timeline">
         {% for job in site.data.timeline %}
 		{% assign idx = forloop.index %}
-        <div class="timeline-block">
-          <div id="content-{{idx}}" class="timeline-content">
-            <h3 class="timeline-position">{{job.position}}</h3>
-            <a class="timeline-company" href="{{element.url}}">{{job.company}}</a>
-            <p class="timeline-description">{{job.description}}</p>
+        <div class="block">
+          <div id="content-{{idx}}" class="content">
+            <h3 class="position">{{job.position}}</h3>
+            <a class="company" href="{{element.url}}">{{job.company}}</a>
+            <p class="description">{{job.description}}</p>
           </div>
-          <div id="semi-{{idx}}" class="timeline-icon-semicircle">
-            <div class="timeline-icon-background">
-              <div class="timeline-icon icon {{job.icon}}"></div>
+          <div id="semi-{{idx}}" class="icon-semicircle">
+            <div class="icon-background">
+              <div class="icon icon {{job.icon}}"></div>
             </div>
           </div>
-          <span class="timeline-date">{{job.date}}</span>
+          <span class="date">{{job.date}}</span>
         </div>
         {% endfor %}
       </div>

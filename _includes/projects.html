@@ -1,39 +1,57 @@
-<section id="projects-section" class="section">
-  <div class="section-wrapper">
+<section id="projects" class="section">
+  <div id="public" class="section-wrapper">
     <h1>What have I done?</h1>
     <span class="divider"></span>
     <div class="projects-wrapper">
-      {% for project in site.data.projects %}
-        <div class="project-block">
-          <div class="project-images">
-            <div class="project-image image-home">
-              <img class="project-image-browser" src="/assets/images/projects/browser.png" alt="Browser Box" />
-              <img class="project-image-home" src="/assets/images/projects/{{project.image}}-home.png" alt="{{project.name}} Home Page" />
+      {% for project in site.data.projects.public %}
+        <div class="block">
+          <div class="images">
+            <div class="image home-group">
+              <img class="browser" src="/assets/images/projects/browser.png" alt="Browser Box" />
+              <img class="home-img" src="/assets/images/projects/{{project.image}}-home.png" alt="{{project.name}} Home Page" />
             </div>
-            <div class="project-image image-alt">
-              <img class="project-image-browser" src="/assets/images/projects/browser.png" alt="Browser Box" />
-              <img class="project-image-alt" src="/assets/images/projects/{{project.image}}-alt.png" alt="{{project.name}} Alternate Page" />
+            <div class="image alt-group">
+              <img class="browser" src="/assets/images/projects/browser.png" alt="Browser Box" />
+              <img class="alt-img" src="/assets/images/projects/{{project.image}}-alt.png" alt="{{project.name}} Alternate Page" />
             </div>
           </div>
-          <div class="project-content">
-            <h3 class="project-name">{{project.name}}</h3>
-            <div class="project-tags">
+          <div class="content">
+            <h3 class="name">{{project.name}}</h3>
+            <div class="tags">
               {% for tag in project.tags %}
-                <span class="project-tag">{{tag.name}}</span>
+                <span class="tag">{{tag.name}}</span>
               {% endfor %}
             </div>
-            <span class="project-content-divider"></span>
-            <p class="project-description">{{project.description}}</p>
-            <div class="project-links">
+            <p class="description">{{project.description}}</p>
+            <div class="links">
               {% for link in project.links %}
-                <a class="project-link" href="{{link.url}}" target="_blank">{{link.type}}</a>
+                <a class="link" href="{{link.url}}" target="_blank">{{link.type}}</a>
               {% endfor %}
             </div>
           </div>
         </div>
         {% if forloop.last == false %}
-          <span class="project-divider"></span>
+          <span class="divider"></span>
         {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div id="private" class="section-wrapper">
+    <h1>Closed Source Projects</h1>
+    <span class="divider"></span>
+    <div class="projects-wrapper">
+      {% for project in site.data.projects.private %}
+        <div class="block">
+          <div class="content">
+            <h3 class="name">{{project.name}}</h3>
+            <div class="tags">
+              {% for tag in project.tags %}
+                <span class="tag">{{tag.name}}</span>
+              {% endfor %}
+            </div>
+            <p class="description">{{project.description}}</p>
+          </div>
+        </div>
       {% endfor %}
     </div>
   </div>

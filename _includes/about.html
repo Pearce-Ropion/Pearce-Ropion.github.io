@@ -1,13 +1,13 @@
-<section id="about-section" class="section">
+<section id="about" class="section">
   <div class="section-wrapper">
     <div class="about-wrapper">
       <h1 class="heading name">{{site.data.about.title}}</h1>
       <h3 class="sub-heading">{{site.data.about.intro}}</h3>
       <span class="divider"></span>
-      <figure class="about-img">
-        <img class="headshot" src="assets/images/headshot.jpg" alt="Pearce Ropion" />
+      <figure class="image">
+        <img class="headshot" src="assets/images/headshot2.jpg" alt="Pearce Ropion" />
       </figure>
-      <div class="about-text-wrapper">
+      <div class="content">
         {% for paragraph in site.data.about.paragraphs %}
           <p class="paragraph">{{paragraph.text}}</p>
         {% endfor %}

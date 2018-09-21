@@ -73,6 +73,9 @@ li {
     z-index: 0;
     .section-wrapper {
         padding: 100px;
+        @include MQ(L) {
+            padding: 50px 50px;
+        }
         @include MQ(M) {
             padding: 50px 50px;
         }

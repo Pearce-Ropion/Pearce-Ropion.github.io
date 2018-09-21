@@ -1,5 +1,5 @@
 #timeline-section {
-    .timeline-blurb {
+    .blurb {
         h2 {
             font-weight: 400;
         }
@@ -15,12 +15,15 @@
                 padding: 1em 0;
             }
             position: relative;
-            .timeline-block {
+            .block {
                 display: block;
                 margin: 3em 0;
                 transition: all 0.3s ease;
                 position: relative;
-                .timeline-content {
+                &:first-of-type {
+                    margin: 1em 0 3em 0;
+                }
+                .content {
                     float: left;
                     width: 45%;
                     position: relative;
@@ -30,6 +33,10 @@
                     transition: all 0.3s ease;
                     text-align: right;
                     margin-right: 1em;
+                    @include MQ(L) {
+                        width: 75%;
+                        text-align: left;
+                    }
                     @include MQ(M) {
                         width: 100%;
                         float: none;
@@ -37,10 +44,10 @@
                         text-align: left;
                         padding-bottom: 3.5em;
                     }
-                    .timeline-position {
+                    .position {
                         line-height: 1.5;
                     }
-                    .timeline-company {
+                    .company {
                         font-family: $Montserrat;
                         font-weight: bold;
                         line-height: 1.5;
@@ -49,13 +56,13 @@
                             transition: color 0.3s ease;
                         }
                     }
-                    .timeline-description {
+                    .description {
                         line-height: 1.5;
                         font-size: 14px;
                         padding-bottom: 0;
                     }
                 }
-                .timeline-icon-semicircle {
+                .icon-semicircle {
                     display: inline-block;
                     height: 200px;
                     width: 100px;
@@ -67,6 +74,9 @@
                     border-top-color: #B35C00;
                     border-left-color: #B35C00;
                     border-bottom-color: #B35C00;
+                    @include MQ(L) {
+                        
+                    }
                     @include MQ(M) {
                         border: none;
                         border-radius: 0;
@@ -95,7 +105,7 @@
                         bottom: -20px;
                         top: inherit;
                     }
-                    .timeline-icon-background {
+                    .icon-background {
                         position: relative;
                         background: #1B1B1B;
                         width: 100px;
@@ -105,10 +115,9 @@
                         transition: all 0.3s ease;
                         margin: 40% 0 0 20%;
                         @include MQ(M) {
-                            height: 65px;
-                            width: 65px;
+                            display: none;
                         }
-                        .timeline-icon {
+                        .icon {
                             vertical-align: middle;
                             background-repeat: no-repeat;
                             background-position: center center;
@@ -119,11 +128,12 @@
                             margin-right: auto;
                             margin-top: 25%;
                             @include MQ(M) {
+                                display: none;
                             }
                         }
                     }
                 }
-                .timeline-date {
+                .date {
                     display: inline-block;
                     position: absolute;
                     text-transform: uppercase;
@@ -132,6 +142,9 @@
                     font-size: 2em;
                     top: calc(100%/3);
                     left: 64%;
+                    @include MQ(L) {
+                        display: none;
+                    }
                     @include MQ(M) {
                         font-size: 1em;
                         left: 40px;
@@ -140,7 +153,7 @@
                         color: $lightGray;
                     }
                 }
-                &:nth-child(even) .timeline-content {
+                &:nth-child(even) .content {
                     float: right;
                     text-align: left;
                     margin-right: 0;
@@ -151,28 +164,31 @@
                         margin-right: 0;
                     }
                 }
-                &:nth-child(even) .timeline-icon-semicircle {
+                &:nth-child(even) .icon-semicircle {
                     border-top-color: #FF8400;
                     border-left-color: #FF8400;
                     border-bottom-color: #FF8400;
                     transform: translate(394px);
+                    @include MQ(L) {
+                        transform: none;
+                    }
                     &:before,
                     &:after {
                         background: #FF8400;
                     }
-                    .timeline-icon-background {
+                    .icon-background {
                         border-color: #FF8400;
                     }
                 }
-                &:nth-child(even) .timeline-date {
+                &:nth-child(even) .date {
                     left: 4%;
                     @include MQ(M) {
                         left: 40px;
                     }
                 }
-                &:nth-child(odd) .timeline-icon-semicircle {
+                &:nth-child(odd) .icon-semicircle {
                     transform: rotate(180deg) translate(-50px);
-                    .timeline-icon {
+                    .icon {
                         transform: rotate(180deg);
                         // margin-left: 21px;
                         @include MQ(M) {

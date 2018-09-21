@@ -1,66 +1,84 @@
-- name: Unified Monitoring Platform
-  description: The Unified Monitoring Platform is the new platform that Proofpoint uses to monitor all of their back-end servers. The app is built using React and React-Redux, due to the massive amount of data it is fed daily. The app has numerous search options and optimizations over the old UI which increases its performace and Proofpoint's Network Operations Center's performace tenfold.
-  image: ump
-  tags:
-    - name: HTML5
-    - name: CSS3
-    - name: ES6
-    - name: React
-    - name: Redux
-    - name: Rollup
-    - name: Storybook
-    - name: SemanticUI
-- name: CREEC
-  description: CREEC (Carbon in Riparian Ecosystems Estimator for California) is a web app built for californian ecologists to estimate how much carbon is available in a geographic location based on numerous parameters. It is built using JQuery/JQueryUI elements using a PHP backend. The app is designed for the Californian Department of Conservation (DOC) and was built in conjunction with a professor at Santa Clara University. The site was later resigned by engineers at the DOC to be compliant with their ASP.net Core tech stack.
-  image: creec
-  tags:
-    - name: HTML5
-    - name: CSS3
-    - name: Javascript
-    - name: JQuery
-    - name: JQuery UI
-    - name: PHP
-    - name: MySQL
-    - name: SQLite
-  links:
-    - type: demo
-      url: http://www.pearceropion.com/portfolio/creec/
-    - type: published
-      url: https://onlinelibrary.wiley.com/doi/10.1111/avsc.12400
-    - type: code
-      url: https://github.com/Pearce-Ropion/creec
-- name: Brefilion EDU Camps
-  description: Brefilion EDU Camps is a fictional summer and winter break education camp. This site is the product of a class project in which I lead a team of 4 devlopers. Everything was built from scratch using a combination of vanilla Javscript, HTML5, CSS3 and PHP5 and MySQL. The site includes an ecommerce portal, registration forms, a forum and a photo gallery page.
-  image: educamps
-  tags:
-    - name: HTML5
-    - name: CSS3
-    - name: Javascript
-    - name: JQuery
-    - name: PHP
-    - name: MySQL
-  links:
-    - type: demo
-      url: http://www.pearceropion.com/portfolio/educamps/
-    - type: code
-      url: https://github.com/Pearce-Ropion/educamps
-- name: aStyleExperience
-  description: A Style Experience is a wordpress website built for a small startup entrepreneur in my area. The site aims at drawing customers with it's sleek, modern design. This was my first foray into buiding a website that was easily editable and could endure through many iterations. There isn't much custom code here as it uses mostly pre-built wordpress themes however, this was my attempt at making a beautiful and arts-y, yet functional website.
-  image: astyleexperience
-  tags:
-    - name: CSS3
-    - name: Javascript
-    - name: Wordpress
-    - name: UI
-    - name: UX
-  links:
-    - type: live
-      url: https://astyleexperience.com
-# - name:
-#   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius sodales dui ac semper. Etiam faucibus blandit nisl vitae iaculis. Sed id velit lacus. Curabitur nec est lorem. Donec mattis ipsum vitae elit elementum congue.
-#   image:
-#   tags:
-#     - name:
-#   links:
-#     - type:
-#       url:
+public:  
+  - name: CREEC
+    description: CREEC (Carbon in Riparian Ecosystems Estimator for California) is a web app built for californian ecologists to estimate how much carbon is available in a geographic location based on numerous parameters. It is built using JQuery/JQueryUI elements using a PHP backend. The app is designed for the Californian Department of Conservation (DOC) and was built in conjunction with a professor at Santa Clara University. The site was later resigned by engineers at the DOC to be compliant with their ASP.net Core tech stack.
+    image: creec
+    tags:
+      - name: HTML5
+      - name: CSS3
+      - name: Javascript
+      - name: JQuery
+      - name: JQuery UI
+      - name: PHP
+      - name: MySQL
+      - name: SQLite
+    links:
+      - type: demo
+        url: http://www.pearceropion.com/portfolio/creec/
+      - type: published
+        url: https://onlinelibrary.wiley.com/doi/10.1111/avsc.12400
+      - type: code
+        url: https://github.com/Pearce-Ropion/creec
+  - name: Brefilion EDU Camps
+    description: Brefilion EDU Camps is a fictional summer and winter break education camp. This site is the product of a class project in which I lead a team of 4 devlopers. Everything was built from scratch using a combination of vanilla Javscript, HTML5, CSS3 and PHP5 and MySQL. The site includes an ecommerce portal, registration forms, a forum and a photo gallery page.
+    image: educamps
+    tags:
+      - name: HTML5
+      - name: CSS3
+      - name: Javascript
+      - name: JQuery
+      - name: PHP
+      - name: MySQL
+    links:
+      - type: demo
+        url: http://www.pearceropion.com/portfolio/educamps/
+      - type: code
+        url: https://github.com/Pearce-Ropion/educamps
+  - name: aStyleExperience
+    description: A Style Experience is a wordpress website built for a small startup entrepreneur in my area. The site aims at drawing customers with it's sleek, modern design. This was my first foray into buiding a website that was easily editable and could endure through many iterations. There isn't much custom code here as it uses mostly pre-built wordpress themes however, this was my attempt at making a beautiful and arts-y, yet functional website.
+    image: astyleexperience
+    tags:
+      - name: CSS3
+      - name: Javascript
+      - name: Wordpress
+      - name: UI
+      - name: UX
+    links:
+      - type: live
+        url: https://astyleexperience.com
+  # - name:
+  #   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius sodales dui ac semper. Etiam faucibus blandit nisl vitae iaculis. Sed id velit lacus. Curabitur nec est lorem. Donec mattis ipsum vitae elit elementum congue.
+  #   image:
+  #   tags:
+  #     - name:
+  #   links:
+  #     - type:
+  #       url:
+
+private:
+  - name: Unified Monitoring Platform
+    description: The Unified Monitoring Platform is the new platform that Proofpoint uses to monitor all of their back-end servers. The app is built using React and React-Redux, due to the massive amount of data it is fed daily. The app has numerous search options and optimizations over the old UI which increases its performace and Proofpoint's Network Operations Center's performace tenfold.
+    tags:
+      - name: HTML5
+      - name: CSS3
+      - name: ES6
+      - name: React
+      - name: Redux
+      - name: Rollup
+      - name: Storybook
+      - name: SemanticUI
+  - name: Visualization Dashboard
+    description: The Visualization Dashboard is a card based visualization application that takes the monitoring data from backend servers and generates visualization charts to represent the data at a high level. The app uses graphQL to query the backend from a combination of Sensu and Nagios monitoring servers and gives a top down overview of the state of Proofpoint's servers.
+    tags:
+      - name: HTML5
+      - name: CSS3
+      - name: ES6
+      - name: React
+      - name: Redux
+      - name: Rollup
+      - name: ReactVis
+      - name: Storybook
+      - name: SemanticUI 
+  # - name:
+  #   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius sodales dui ac semper. Etiam faucibus blandit nisl vitae iaculis. Sed id velit lacus. Curabitur nec est lorem. Donec mattis ipsum vitae elit elementum congue.
+  #   tags:
+  #     - name:
